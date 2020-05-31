@@ -1,1 +1,5 @@
-console.log('hi i am ready')
+import { GithubApiService } from "./GithubApiService";
+
+let gitHubService = new GithubApiService();
+gitHubService.getUserInfo('srinivasreddyramaram');
+gitHubService.getRepos('srinivasreddyramaram');
