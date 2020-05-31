@@ -1,0 +1,12 @@
+{
+  "name": "github-report-utility",
+  "version": "1.0.0",
+  "description": "simple command-line utility to get your top repositories from Github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./out/index.js"
+  },
+  "author": "srinivasreddyramaram",
+  "license": "ISC"
+}
