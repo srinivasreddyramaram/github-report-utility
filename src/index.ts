@@ -4,8 +4,11 @@ import { Repo } from "./Repo";
 
 let gitHubService = new GithubApiService();
 gitHubService.getUserInfo('srinivasreddyramaram', (user: User) => {
-    console.log(user);
+    //console.log(user);
+    gitHubService.getRepos('srinivasreddyramaram', (repos: Repo[]) => {
+        //console.log(repos);
+        user.repos = repos;
+        console.log(user);
+    });
 });
-gitHubService.getRepos('srinivasreddyramaram', (repos: Repo[]) => {
-    console.log(repos);
-});
+
